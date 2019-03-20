@@ -14,7 +14,8 @@ RUN apk --update --no-cache add \
 		curl
 		
 RUN curl https://releases.hashicorp.com/packer/${PACKER_VERSION}/packer_${PACKER_VERSION}_linux_amd64.zip -o packer_${PACKER_VERSION}_linux_amd64.zip 
-RUN unzip packer_${PACKER_VERSION}_linux_amd64.zip -d /usr/bin
+RUN unzip packer_${PACKER_VERSION}_linux_amd64.zip -d /usr/bin \
+ && rm -rf packer_${PACKER_VERSION}_linux_amd64.zip
  
 RUN apk --update --no-cache add --virtual \
         .build-deps \
