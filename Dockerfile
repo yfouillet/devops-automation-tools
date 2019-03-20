@@ -4,6 +4,9 @@ ENV ANSIBLE_VERSION "2.7.9"
 ENV ANSIBLE_LINT_VERSION "3.4.23"
 ENV PACKER_VERSION="1.2.4"
 
+ARG VCS_REF
+LABEL org.label-schema.ansible.version=${ANSIBLE_VERSION}
+	  
 RUN apk --update --no-cache add \
         ca-certificates \
         python3 \
