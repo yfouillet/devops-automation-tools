@@ -6,12 +6,15 @@ ENV PACKER_VERSION="1.2.4"
 
 ARG VCS_REF
 LABEL org.label-schema.ansible.version=${ANSIBLE_VERSION}
+
+LABEL org.label-schema.vcs-ref=${ANSIBLE_VERSION} \
+      org.label-schema.vcs-url="e.g. https://github.com/yfouillet/devops-automation-tools"
 	  
 RUN apk --update --no-cache add \
         ca-certificates \
         python3 \
-		terraform \
-		curl
+	terraform \
+	curl
 		
 RUN curl https://releases.hashicorp.com/packer/${PACKER_VERSION}/packer_${PACKER_VERSION}_linux_amd64.zip -o packer_${PACKER_VERSION}_linux_amd64.zip 
 RUN unzip packer_${PACKER_VERSION}_linux_amd64.zip -d /usr/bin \
