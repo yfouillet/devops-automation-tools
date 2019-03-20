@@ -6,7 +6,12 @@
 
 DevOps automation Tools Docker Images built on Alpine Linux
 
-### Start image in Docker with Linux shell
+- Ansible (with jinja2) : 2.7.9
+- Ansible LINT : 3.4.23
+- Terraform : 0.11.8
+- Packer : 1.2.4
+
+#### Start image in Docker with Linux shell
 
 ```
 docker run --rm -it -h localhost -v $(pwd):/workspace yfouillet/devops-automation-tools
@@ -17,12 +22,12 @@ docker run --rm -it -h localhost -v $(pwd):/workspace yfouillet/devops-automatio
 => Settings -> Shared Drives -> Check the best drive used -> apply
 
 
-### Start image in Docker with Windows command line (DOS)
+#### Start image in Docker with Windows command line (DOS)
 
 ```
 docker run --rm -it -h localhost -v %CD%\:/workspace -w /workspace yfouillet/devops-automation-tools
 ```
-### Start image in Docker with Windows Powershell
+#### Start image in Docker with Windows Powershell
 
 ```
 docker run --rm -it -h localhost -v $PWD\:/workspace -w /workspace yfouillet/devops-automation-tools
