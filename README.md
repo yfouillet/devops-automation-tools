@@ -1,4 +1,4 @@
-[![Build status](https://dev.azure.com/yfouillet/Docker-hub/_apis/build/status/devops-automation-tools)](https://dev.azure.com/yfouillet/Docker-hub/_build/latest?definitionId=2) [![](https://images.microbadger.com/badges/version/yfouillet/devops-automation-tools.svg)](https://microbadger.com/images/yfouillet/devops-automation-tools "Get your own version badge on microbadger.com") ![Docker Stars](https://img.shields.io/docker/stars/yfouillet/devops-automation-tools.svg)  [![](https://images.microbadger.com/badges/image/yfouillet/devops-automation-tools.svg)](https://microbadger.com/images/yfouillet/devops-automation-tools "Get your own image badge on microbadger.com") 
+[![Build status](https://dev.azure.com/yfouillet/Docker-hub/_apis/build/status/devops-automation-tools)](https://dev.azure.com/yfouillet/Docker-hub/_build/latest?definitionId=2) [![](https://images.microbadger.com/badges/version/yfouillet/devops-automation-tools.svg)](https://microbadger.com/images/yfouillet/devops-automation-tools "Get your own version badge on microbadger.com") ![Docker Stars](https://img.shields.io/docker/stars/yfouillet/devops-automation-tools.svg)
 
 
 # devops-automation-tools
