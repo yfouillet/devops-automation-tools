@@ -17,10 +17,13 @@ DevOps automation Tools Docker Images built on Alpine Linux
 docker run --rm -it -h localhost -v $(pwd):/workspace yfouillet/devops-automation-tools
 ```
 
-### :warning: Warning for Windows, it is necessary to enable the drive mapping in Docker :warning:
+### :warning: Warning for Windows, it is necessary to authorise access in windows directory :warning:
 
-=> Settings -> Shared Drives -> Check the best drive used -> apply
-If you are a professional computer (authentification required) => just share directory
+### For a personal computer (enable the drive mapping in Docker ) :
+=> Docker Settings -> Shared Drives -> Check the best drive used -> apply
+
+### For a professional computer (share directory for use it) :
+=> Right click in directory => Settings -> Share -> Share -> add
 
 #### Start image in Docker with Windows command line (DOS)
 
