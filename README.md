@@ -20,7 +20,7 @@ docker run --rm -it -h localhost -v $(pwd):/workspace yfouillet/devops-automatio
 ### :warning: Warning for Windows, it is necessary to authorise access in windows directory :warning:
 
 ### For a personal computer (enable the drive mapping in Docker ) :
-=> Docker Settings -> Shared Drives -> Check the best drive used -> apply
+=> Docker Settings -> Shared Drives -> Check the drive necessary -> apply
 
 ### For a professional computer (share directory for use it) :
 => Right click in directory => Settings -> Share -> Share -> add
