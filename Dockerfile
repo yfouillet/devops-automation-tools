@@ -3,7 +3,16 @@ FROM alpine:3.9
 ENV ANSIBLE_VERSION "2.7.9"
 ENV ANSIBLE_LINT_VERSION "3.4.23"
 ENV PACKER_VERSION="1.2.4"
-	  
+
+ENV USER_NAME agent-user
+ENV USER_GROUP agent-user
+
+ARG UID=10000
+ARG GID=10000
+
+RUN addgroup -S $USER_GROUP -g $GID
+RUN adduser -S -G $USER_GROUP $USER_NAME -u $UID
+
 RUN apk --update --no-cache add \
         ca-certificates \
         python3 \
@@ -36,6 +45,7 @@ RUN rm -rf /var/cache/apk/* \
  && find  -name '/__pycache__' -exec rm -rf {} \;
 RUN mkdir -p /workspace/
 
-WORKDIR /workspace
+user $USER_NAME
 
+WORKDIR /workspace
 CMD ["/bin/sh"]
