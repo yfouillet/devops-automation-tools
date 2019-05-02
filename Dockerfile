@@ -45,7 +45,7 @@ RUN rm -rf /var/cache/apk/* \
  && find  -name '/__pycache__' -exec rm -rf {} \;
 RUN mkdir -p /workspace/
 
-user $USER_NAME
+USER $USER_NAME
 
 WORKDIR /workspace
 CMD ["/bin/sh"]
