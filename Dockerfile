@@ -36,6 +36,7 @@ RUN apk --update --no-cache add --virtual \
         jinja2 \
 		ansible==${ANSIBLE_VERSION} \
         ansible-lint==${ANSIBLE_LINT_VERSION} \
+	molecule \
  && apk del \
         .build-deps \
 		curl
