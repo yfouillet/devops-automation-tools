@@ -48,7 +48,7 @@ RUN rm -rf /var/cache/apk/* \
  && find  -name '/__pycache__' -exec rm -rf {} \;
 RUN mkdir -p /workspace/
 
-RUN addgroup agent-user docker
+RUN addgroup $USER_NAME docker
 RUN rc-update add docker boot
 
 USER $USER_NAME
