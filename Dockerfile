@@ -47,6 +47,8 @@ RUN rm -rf /var/cache/apk/* \
  && find  -name '/__pycache__' -exec rm -rf {} \;
 RUN mkdir -p /workspace/
 
+RUN rc-update add docker boot
+
 USER $USER_NAME
 
 WORKDIR /workspace
