@@ -19,7 +19,8 @@ RUN apk --update --no-cache add \
 	terraform \
 	curl \
 	git \
-	docker
+	docker \
+	openrc
 		
 RUN curl https://releases.hashicorp.com/packer/${PACKER_VERSION}/packer_${PACKER_VERSION}_linux_amd64.zip -o packer_${PACKER_VERSION}_linux_amd64.zip 
 RUN unzip packer_${PACKER_VERSION}_linux_amd64.zip -d /usr/bin \
